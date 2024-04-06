@@ -1,0 +1,4 @@
+I python har jeg lært å kjøre for løkke
+I python har jeg lært å lese av filer
+I python har jeg lært å llage metoder
+I python har jeg lært å kjøre drive objektorientert programmering
