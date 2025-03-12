@@ -13,7 +13,7 @@ class RandomWalk:
 
     def get_step(self):
         direction = choice([1, -1])
-        distance = choice([0, 1, 2, 3, 4, ])
+        distance = choice([0, 1, 2, 3, 4])
         step = direction * distance
 
         return step
