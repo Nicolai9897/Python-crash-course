@@ -12,7 +12,7 @@ class Topic(models.Model):
 class Entry(models.Model):
     """Something specific learned aboult a topic."""
     topic = models.ForeignKey(Topic, on_delete=models.CASCADE)
-    text =models.TextField()
+    text = models.TextField()
     date_added = models.DateTimeField(auto_now_add=True)
     
     class Meta:
@@ -20,4 +20,6 @@ class Entry(models.Model):
         
     def __str__(self):
         """"Return a simple string representing the entry."""
+        if len(self.text) <= 50:
+            return self.text
         return f"{self.text[:50]}..."
